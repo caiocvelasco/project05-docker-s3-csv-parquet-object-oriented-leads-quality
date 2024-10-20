@@ -1,0 +1,14 @@
+{
+    "name": "Python PostgreSQL",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "python",
+    "workspaceFolder": "/workspace",
+    "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": null
+    },
+    "postCreateCommand": "docker image prune -f"
+}
